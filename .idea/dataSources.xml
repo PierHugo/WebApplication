@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="resources:hibernate.cfg.xml/Hibernate" uuid="2a0b5035-8a4a-4b2b-a7a1-8b6001bf173b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+D:/Users/pierhugo/Downloads/JEEArchetype/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3308/TP1?serverTimezone=UTC&amp;createDatabaseIfNotExist=true</jdbc-url>
+    </data-source>
+  </component>
+</project>

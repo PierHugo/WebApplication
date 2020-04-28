@@ -1,5 +1,10 @@
 <html>
-<body>
-<h2>Hello World!</h2>
-</body>
+<head>
+    <title>Homepage</title>
+    <%@include file="header.jsp" %>
+    <main>
+
+    </main>
+    <%@include file="footer.jsp" %>
+
 </html>
