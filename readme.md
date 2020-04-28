@@ -1,4 +1,4 @@
-# Archetype projet Jakarta EE
+# Web application Jakarta EE
 
 Ceci est une application Web écrite en Jakarta EE.
 
