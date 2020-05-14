@@ -40,7 +40,7 @@ public class RegisterServlet extends HttpServlet
         admin.setUsername(username);
         admin.setPassword(DigestUtils.sha256Hex(password));
 
-        boolean created = Controller.getAdminDAO().saveOrUpdate(admin); //Bug inscription
+        boolean created = Controller.getAdminDAO().saveOrUpdate(admin);
 
         if (created)
         {
