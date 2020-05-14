@@ -1,6 +1,7 @@
 package controller;
 
 import DAO.AdminDAO;
+import DAO.UserDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -13,6 +14,7 @@ public class Controller
     private static Session session;
     private static Transaction transaction;
 
+    private static UserDAO userDAO;
     private static AdminDAO adminDAO;
 
     private Controller()
@@ -22,6 +24,7 @@ public class Controller
         session = sessionFactory.openSession();
         transaction = null;
 
+        userDAO = new UserDAO();
         adminDAO = new AdminDAO();
     }
 
@@ -56,6 +59,11 @@ public class Controller
     public static Transaction getTransaction()
     {
         return transaction;
+    }
+
+    public static UserDAO getUserDAO()
+    {
+        return userDAO;
     }
 
     public static AdminDAO getAdminDAO()

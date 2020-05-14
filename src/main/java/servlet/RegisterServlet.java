@@ -2,6 +2,7 @@ package servlet;
 
 import controller.Controller;
 import model.Admin;
+import model.User;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.servlet.RequestDispatcher;
@@ -23,6 +24,9 @@ public class RegisterServlet extends HttpServlet
         String lastName = request.getParameter("lastname");
         String age = request.getParameter("age");
         String city = request.getParameter("city");
+        String check_admin = request.getParameter("check_admin");
+
+        boolean isCreated = false;
 
         if (username.equals("") || password.equals("") || firstName.equals("") || lastName.equals("") || age.equals("") || city.equals(""))
         {
@@ -31,18 +35,16 @@ public class RegisterServlet extends HttpServlet
             dispatcher.forward(request, response);
             return;
         }
+        System.out.println(check_admin);
+        if(check_admin != null) {
+            Admin admin = new Admin(firstName, lastName, username, DigestUtils.sha256Hex(password), age, city);
+            isCreated = Controller.getAdminDAO().saveOrUpdate(admin);
+        }else{
+            User user = new User(firstName, lastName, username, DigestUtils.sha256Hex(password), age, city);
+            isCreated = Controller.getUserDAO().saveOrUpdate(user);
+        }
 
-        Admin admin = new Admin();
-        admin.setFirstName(firstName);
-        admin.setLastName(lastName);
-        admin.setAge(age);
-        admin.setCity(city);
-        admin.setUsername(username);
-        admin.setPassword(DigestUtils.sha256Hex(password));
-
-        boolean created = Controller.getAdminDAO().saveOrUpdate(admin); //Bug inscription
-
-        if (created)
+        if (isCreated)
         {
             RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
             dispatcher.forward(request, response);

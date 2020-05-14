@@ -45,6 +45,11 @@
                         <label for="password">Password</label>
                     </div>
                 </div>
+                <label>
+                    <input id="check_admin" type="checkbox" name="check_admin"/>
+                    <span>Je suis administrateur !</span>
+                </label>
+
                 <div class="row">
                     <div id="error">
                         ${error}

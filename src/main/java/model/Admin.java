@@ -9,4 +9,7 @@ import javax.persistence.Table;
 @DiscriminatorValue(value = "GenericUser")
 public class Admin extends User
 {
+    public Admin(String firstName, String lastName, String username, String password, String age, String city) {
+        super(firstName, lastName, username, password, age, city);
+    }
 }
