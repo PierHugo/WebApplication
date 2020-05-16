@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tp" />
         <module name="WebApplication" />
         <module name="TP1" />
       </profile>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="TP1" options="-endorseddirs C:\Users\DosSa\Desktop\JEE\TP1\target/endorsed" />
       <module name="WebApplication" options="-endorseddirs D:\Users\pierhugo\Downloads\JEEArchetype\target/endorsed" />
+      <module name="tp" options="-endorseddirs C:\Users\DosSa\Desktop\JEE\tp\target/endorsed" />
     </option>
   </component>
 </project>

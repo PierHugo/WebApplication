@@ -45,6 +45,24 @@
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>servlet.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/administration</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserinfoServlet</servlet-name>
+        <servlet-class>servlet.UserinfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserinfoServlet</servlet-name>
+        <url-pattern>/information</url-pattern>
+    </servlet-mapping>
 
     <jsp-config>
         <jsp-property-group>

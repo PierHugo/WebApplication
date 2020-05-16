@@ -21,6 +21,19 @@ public class UserDAO {
             return users.get(0);
     }
 
+    public User findByUsername(String username)
+    {
+        Controller.beginTransaction();
+        TypedQuery<User> query = Controller.getSession().createQuery("FROM User WHERE username = :username", User.class);
+        query.setParameter("username", username);
+        List<User> users = query.getResultList();
+        Controller.commitTransaction();
+        if (users.size() == 0)
+            return null;
+        else
+            return users.get(0);
+    }
+
     public boolean delete(User entity)
     {
         try

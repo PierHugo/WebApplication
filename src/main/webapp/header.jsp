@@ -21,6 +21,11 @@
                             <a href="login">Log out</a>
                         </li>
                     </c:when>
+                    <c:when test="${sessionScope.type == 'user'}">
+                        <li>
+                            <a href="login">Log out</a>
+                        </li>
+                    </c:when>
                     <c:otherwise>
                         <li>
                             <a href="login">Log in</a>
