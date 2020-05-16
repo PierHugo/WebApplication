@@ -45,7 +45,7 @@ public class LoginServlet extends HttpServlet
                 session.setAttribute("type", type);
                 session.setAttribute("username", username);
                 session.setAttribute("password", password);
-                response.sendRedirect("http://localhost:8081/tp_war_exploded/administration");
+                response.sendRedirect("http://localhost:8081/WebApplication_war_exploded/administration");
             }
 
             if(user != null){
