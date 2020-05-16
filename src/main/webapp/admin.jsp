@@ -2,7 +2,7 @@
 <jsp:useBean id="error" scope="request" type="java.lang.String" class="java.lang.String"/>
 <html>
 <head>
-    <title>Administration</title>
+    <title>Admin</title>
     <%@include file="header.jsp" %>
 
     <main>
@@ -11,7 +11,7 @@
                 <h3 class="card-title">User list</h3>
             </div>
 
-            <form class="col s12" action="administration" method="post">
+            <form class="col s12" action="admin" method="post">
                 <div class="input-field col s6 row">
                     <input id="username" type="text" name="username" class="validate">
                     <label for="username">Type the username to delete</label>

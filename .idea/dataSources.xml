@@ -9,7 +9,7 @@
 
 D:/Users/pierhugo/Downloads/JEEArchetype/resources/hibernate.cfg.xml</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3308/TP1?serverTimezone=UTC&amp;createDatabaseIfNotExist=true</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/TP1?serverTimezone=UTC&amp;createDatabaseIfNotExist=true</jdbc-url>
     </data-source>
   </component>
 </project>

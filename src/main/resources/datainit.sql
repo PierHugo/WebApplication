@@ -1,3 +1,8 @@
+/*
+CREATE USER 'Cours_JEE_JDBC1'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'Cours_JEE_JDBC1'@'localhost';
+*/
+
 create table admin
 (
     id         bigint       not null auto_increment primary key,

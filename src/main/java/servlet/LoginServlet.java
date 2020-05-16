@@ -1,6 +1,5 @@
 package servlet;
 
-import com.mysql.cj.exceptions.ClosedOnExpiredPasswordException;
 import controller.Controller;
 import model.Admin;
 import model.User;
@@ -45,7 +44,7 @@ public class LoginServlet extends HttpServlet
                 session.setAttribute("type", type);
                 session.setAttribute("username", username);
                 session.setAttribute("password", password);
-                response.sendRedirect("http://localhost:8081/WebApplication_war_exploded/administration");
+                response.sendRedirect("./admin");
             }
 
             if(user != null){

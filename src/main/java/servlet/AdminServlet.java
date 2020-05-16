@@ -27,6 +27,6 @@ public class AdminServlet extends HttpServlet {
             Controller.getUserDAO().delete(user);
         }
 
-        response.sendRedirect("http://localhost:8081/WebApplication_war_exploded/administration");
+        response.sendRedirect("./admin");
     }
 }
