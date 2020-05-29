@@ -14,5 +14,5 @@ Ceci est une application Web écrite en Jakarta EE.
 
 * Tous les utilisateurs peuvent se créer un compte.
 
-### Étudiant
-Pier-Hugo CARPENTIER
+### Étudiants
+Corentin BOURDON - Pier-Hugo CARPENTIER - Lucas DOS SANTOS - Erwann PIEDLOUP
