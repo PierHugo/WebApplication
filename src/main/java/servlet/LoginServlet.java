@@ -47,7 +47,8 @@ public class LoginServlet extends HttpServlet
                 response.sendRedirect("./admin");
             }
 
-            if(user != null){
+            if (user != null)
+            {
                 isFound = true;
                 type = "user";
                 request.setAttribute("user", user);

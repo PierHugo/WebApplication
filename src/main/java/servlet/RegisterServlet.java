@@ -36,10 +36,12 @@ public class RegisterServlet extends HttpServlet
             return;
         }
         System.out.println(check_admin);
-        if(check_admin != null) {
+        if (check_admin != null)
+        {
             Admin admin = new Admin(firstName, lastName, username, DigestUtils.sha256Hex(password), age, city);
             isCreated = Controller.getAdminDAO().saveOrUpdate(admin);
-        }else{
+        } else
+        {
             User user = new User(firstName, lastName, username, DigestUtils.sha256Hex(password), age, city);
             isCreated = Controller.getUserDAO().saveOrUpdate(user);
         }

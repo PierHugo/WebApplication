@@ -33,15 +33,15 @@
                     </thead>
 
                     <tbody>
-                        <c:forEach var="user" items="${user}">
-                            <tr>
-                                <td><c:out value="${user.username}">${user.username}</c:out></td>
-                                <td><c:out value="${user.firstName}">${user.firstName}</c:out></td>
-                                <td><c:out value="${user.lastName}">${user.lastName}</c:out></td>
-                                <td><c:out value="${user.age}">${user.age}</c:out></td>
-                                <td><c:out value="${user.city}">${user.city}</c:out></td>
-                            </tr>
-                        </c:forEach>
+                    <c:forEach var="user" items="${user}">
+                        <tr>
+                            <td><c:out value="${user.username}">${user.username}</c:out></td>
+                            <td><c:out value="${user.firstName}">${user.firstName}</c:out></td>
+                            <td><c:out value="${user.lastName}">${user.lastName}</c:out></td>
+                            <td><c:out value="${user.age}">${user.age}</c:out></td>
+                            <td><c:out value="${user.city}">${user.city}</c:out></td>
+                        </tr>
+                    </c:forEach>
                     </tbody>
                 </table>
 

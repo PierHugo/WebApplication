@@ -6,7 +6,8 @@ import model.User;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class UserDAO {
+public class UserDAO
+{
     public User findByUsernameAndPassword(String username, String password)
     {
         Controller.beginTransaction();

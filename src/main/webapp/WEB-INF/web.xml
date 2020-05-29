@@ -45,7 +45,7 @@
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
-    
+
     <servlet>
         <servlet-name>AdminServlet</servlet-name>
         <servlet-class>servlet.AdminServlet</servlet-class>

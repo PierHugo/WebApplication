@@ -13,10 +13,13 @@
 <header>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Web Application</a>
+            <a href="/" class="brand-logo">Web Application</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <c:choose>
                     <c:when test="${sessionScope.type == 'admin'}">
+                        <li>
+                            <a href="admin">Admin panel</a>
+                        </li>
                         <li>
                             <a href="login">Log out</a>
                         </li>

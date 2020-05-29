@@ -5,9 +5,9 @@ import org.hibernate.annotations.DiscriminatorFormula;
 import javax.persistence.*;
 
 @MappedSuperclass
-@Table(name = "Person")
 @DiscriminatorFormula("'GenericUser'")
-public abstract class Person {
+public abstract class Person
+{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -30,7 +30,8 @@ public abstract class Person {
     @Column(name = "city", nullable = false)
     private String city;
 
-    public Person(){
+    public Person()
+    {
         this.firstName = "";
         this.lastName = "";
         this.username = "";
